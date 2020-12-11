@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_song_item"
+    android:id="@+id/song_item"
+    >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/song_img"
+        android:background="@drawable/default_song_img"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="File Name"
+        android:layout_toEndOf="@+id/song_img"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/song_name"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:layout_toStartOf="@id/chekc_song"
+        android:layout_marginEnd="10dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="@color/white"
+        android:id="@+id/chekc_song"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
