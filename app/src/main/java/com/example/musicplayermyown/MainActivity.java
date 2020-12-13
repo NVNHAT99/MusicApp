@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
             // TODO some thing you want here like make a toast
             AllAudioList = getAllAudio(this);
             initView();
+            getAlbum();
         }
     }
 
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
                 AllAudioList = getAllAudio(this);
                 initView();
+                getAlbum();
             }else {
                 Toast.makeText(MainActivity.this,"you need accses permission on setting",Toast.LENGTH_LONG);
                 /*new Timer().schedule(new TimerTask() {
